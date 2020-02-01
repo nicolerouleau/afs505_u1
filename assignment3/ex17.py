@@ -10,6 +10,7 @@ print(f"Copying from {from_file} to {to_file}")
 
 print(f"The input file is {len(from_file)} bytes long")
 
+# only need line 2 for line 14 below 
 print(f"Does the output file exist? {exists(to_file)}")
 print("Ready, hit RETURN to continue, CTRL-C to abort.")
 input()

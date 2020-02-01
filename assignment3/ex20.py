@@ -6,11 +6,12 @@ script, input_file = argv
 def print_all(f):
     print(f.read())
 
-# seek(0) find the first line
+# seek(0) find the first point in first line
 def rewind(f):
     f.seek(0)
 
 # reads the lines of the script and counts them (that's why we see a 1,2,3)
+# readline goes through each line 1 by 1
 def print_a_line(line_count, f):
     print(line_count, f.readline())
 

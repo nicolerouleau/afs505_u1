@@ -1,7 +1,7 @@
 import sys
 script, input_encoding, error = sys.argv
 
-
+# loop statement done in  weird way (uses return)
 def main(language_file, encoding, errors):
     line = language_file.readline()
 
