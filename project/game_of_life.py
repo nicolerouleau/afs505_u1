@@ -37,16 +37,17 @@ from sys import argv
 # function changes 0's to -'s and 1's to X's and prints
 # function sets range of grid to start at 1:1
 def print_g(grid, rows, col):
-"""
+    """
+    
+    param grid: 2D list of cells
+    type grid: array of integers that represent cells within the grid
+    param rows: number of rows in the grid
+    type rows: integer
+    param col: number of columns in the grid
+    type col: integer
 
-param grid: 2D list of cells
-type grid: array of integers that represent cells within the grid
-param rows: number of rows in the grid
-type rows: integer
-param col: number of columns in the grid
-type col: integer
+    """
 
-"""
     for i in range(rows - 1):
         for j in range(col - 1):
             if grid[i][j] == 1:
@@ -60,13 +61,13 @@ type col: integer
 
 # function allows for cells to be turned on trhu terminl argument
 def on_off(grid, cell):
-"""
-param grid: 2D list of cells
-type grid: array of integers that represent cells within the grid
-param cell: specified cells to be acitivated within matrix
-type cell: list
+    """
+    param grid: 2D list of cells
+    type grid: array of integers that represent cells within the grid
+    param cell: specified cells to be acitivated within matrix
+    type cell: list
 
-"""
+    """
     for on in cell:
         # split will split a string into a list
         # in this case allowing the entered numbered of cells in the
@@ -78,16 +79,16 @@ type cell: list
 # function defines: grid of neighbors
 # and  how rules of grid are determinded based on number of neighbors
 def play_game(grid, rows, col):
-"""
+    """
 
-param grid: 2D list of cells
-type grid: array of integers that represent cells within the grid
-param rows: number of rows in the grid
-type rows: integer
-param col: number of columns in the grid
-type col: integer
+    param grid: 2D list of cells
+    type grid: array of integers that represent cells within the grid
+    param rows: number of rows in the grid
+    type rows: integer
+    param col: number of columns in the grid
+    type col: integer
 
-"""
+    """
     # new_grid stores the grid of newly determined grid based on rules from ticks
     new_grid = [[0] * col for i in range(rows)]
     for i in range(rows - 1):
